@@ -161,3 +161,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 >>>>>>> 7830e32322acf87441d40fa471b4d645471dcae1
+.vercel/
+dist/
