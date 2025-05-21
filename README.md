@@ -1,4 +1,45 @@
-# Astro Starter Kit: Portfolio
+# Nathanael Dougherty - Portfolio Website
+
+This is my personal portfolio website built with Astro, showcasing my projects, skills, and experience in computer science and finance.
+
+## Features
+
+- Modern, responsive design
+- Project showcase with detailed descriptions
+- Skills and experience sections
+- Contact information
+
+## Technologies Used
+
+- [Astro](https://astro.build) - Static site generator
+- [Tailwind CSS](https://tailwindcss.com) - For styling
+- [GitHub](https://github.com) - Source control and deployment
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Deployment
+
+This site is deployed using Vercel. The main branch is automatically deployed to production.
+
+## Connect with Me
+
+- Email: dougherty.n@northeastern.edu
+- GitHub: [ndougherty-csgrad](https://github.com/ndougherty-csgrad)
+
+## License
+
+MIT
 
 ```sh
 npm create astro@latest -- --template portfolio

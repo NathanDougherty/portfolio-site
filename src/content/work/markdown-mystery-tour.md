@@ -1,35 +1,61 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+title: Algorithmic Trading Data Validation Pipeline
+publishDate: 2024-04-20 00:00:00
+img: /assets/data-validation.jpg
+img_alt: Data validation dashboard showing signal quality metrics
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  A robust Python-based validation framework ensuring data integrity for algorithmic trading systems
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Python
+  - Pandas
+  - Quantitative Finance
+  - Data Engineering
 ---
 
-## Level-two heading
+## Ensuring Data Integrity for Algorithmic Trading
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+In quantitative finance, data quality is paramount. The Algorithmic Trading Data Validation Pipeline is a sophisticated framework designed to detect and filter out problematic market data before it enters trading systems, preventing potentially costly errors.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+### Challenge
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Market data feeds can contain various anomalies that, if undetected, could lead to incorrect trading signals and financial losses:
+- Stale prices
+- Unrealistic spikes
+- Missing values
+- Corrupted timestamps
+- Data format inconsistencies
 
-### Level-three heading
+### Solution
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+I developed a comprehensive validation pipeline that processes over 50 trading signal datasets with a 99.8% data integrity guarantee. The system applies multiple layers of validation:
 
-### Level-three heading
+1. **Statistical Anomaly Detection**: Identifies outliers using advanced statistical methods including:
+   - Z-score analysis
+   - Moving window volatility comparisons
+   - Distribution modeling
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+2. **Temporal Consistency Checks**: Ensures data points maintain logical sequence and timing requirements
+   
+3. **Dual-Detection System**: Cross-references signals across multiple data sources, reducing false positives by 87%
+   
+4. **Performance Optimization**: Re-engineered the processing pipeline to achieve 40% faster execution for near real-time market analysis
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+### Technical Implementation
 
-#### Level-four heading
+The pipeline was built using:
+- **Python Core**: Primary language for system development
+- **Pandas/NumPy**: Data manipulation and analysis
+- **Scikit-learn**: Machine learning models for anomaly detection
+- **Dask**: Parallel computing for handling large datasets
+- **Pytest**: Comprehensive test suite ensuring reliable operation
 
-- We noted this
-- And also this other point
+### Impact
+
+The validation pipeline has become a critical component in the trading infrastructure, processing terabytes of market data daily. By ensuring data quality, it has:
+
+- Prevented several potential trading errors that could have resulted in significant losses
+- Increased confidence in trading algorithm performance
+- Provided valuable insights into data quality issues for upstream data providers
+- Established a foundation for more advanced trading systems
+
+This project demonstrates my ability to apply software engineering principles to solve complex financial problems, combining technical expertise with domain knowledge in quantitative finance.
